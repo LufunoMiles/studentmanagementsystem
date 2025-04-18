@@ -1,0 +1,42 @@
+System Architecture Overview
+🔑 1. Authentication Layer
+Sign Up (Student or Admin)
+
+Log In (with role validation)
+
+Redirect based on role
+
+🧍 2. User Roles
+Admin Side
+
+View/Add/Edit/Delete Students
+
+View Attendance & Marks
+
+Manage Lecturers (optional later)
+
+Student Side
+
+View Profile
+
+View Marks & Attendance
+
+Edit limited info
+
+🏛 3. Separation of Concerns (Logical Layers)
+Main.java – launches the app
+
+LoginFrame.java – login and signup GUI
+
+User.java – base class for Student and Admin
+
+Student.java – student data and actions
+
+Admin.java – admin data and actions
+
+Database.java – mock data store (later a file/db)
+
+DashboardStudent.java – GUI for student
+
+DashboardAdmin.java – GUI for admin
+
